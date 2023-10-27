@@ -1,4 +1,10 @@
 import Navbar from "../components/Navbar";
+import burung from "../assets/images/burungpretBgRemove.png";
+import porto1 from "../assets/images/portfolio/1.jpeg";
+import mekdi from "../assets/images/clients/mcdonalds.svg";
+import apple from "../assets/images/clients/apple.svg";
+import bmw from "../assets/images/clients/bmw.svg";
+import google from "../assets/images/clients/google.svg";
 
 export default function WebPortofolio() {
   return (
@@ -18,7 +24,7 @@ export default function WebPortofolio() {
             </div>
             <div className="w-full self-end px-4 lg:w-1/2">
               <div className="relative mt-10 lg:mt-9 lg:right-0">
-                <img src="/images/burungretBgRemove.png" alt="burung" className="max-w-full mx-auto" />
+                <img src={burung} alt="burung" className="max-w-full mx-auto" />
               </div>
             </div>
           </div>
@@ -75,28 +81,28 @@ export default function WebPortofolio() {
           <div className="mx-auto w-full px-4 flex flex-wrap justify-center xl:w-10/12">
             <div className="mb-12 p-4 md:w-1/2">
               <div className="rounded-md shadow-md overflow-hidden">
-                <img src="/images/portfolio/1.jpeg" alt="cashier app" />
+                <img src={porto1} alt="cashier app" />
               </div>
               <h3 className="font-semibold text-xl text-dark mt-5 mb-3">Cashier App</h3>
               <p className="font-medium text-base text-secondary">auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh aliquam sem et tortor consequat id porta nibh</p>
             </div>
             <div className="mb-12 p-4 md:w-1/2">
               <div className="rounded-md shadow-md overflow-hidden">
-                <img src="/images/portfolio/1.jpeg" alt="cashier app" />
+                <img src={porto1} alt="cashier app" />
               </div>
               <h3 className="font-semibold text-xl text-dark mt-5 mb-3">Cashier App</h3>
               <p className="font-medium text-base text-secondary">auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh aliquam sem et tortor consequat id porta nibh</p>
             </div>
             <div className="mb-12 p-4 md:w-1/2">
               <div className="rounded-md shadow-md overflow-hidden">
-                <img src="/images/portfolio/1.jpeg" alt="cashier app" />
+                <img src={porto1} alt="cashier app" />
               </div>
               <h3 className="font-semibold text-xl text-dark mt-5 mb-3">Cashier App</h3>
               <p className="font-medium text-base text-secondary">auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh aliquam sem et tortor consequat id porta nibh</p>
             </div>
             <div className="mb-12 p-4 md:w-1/2">
               <div className="rounded-md shadow-md overflow-hidden">
-                <img src="/images/portfolio/1.jpeg" alt="cashier app" />
+                <img src={porto1} alt="cashier app" />
               </div>
               <h3 className="font-semibold text-xl text-dark mt-5 mb-3">Cashier App</h3>
               <p className="font-medium text-base text-secondary">auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh aliquam sem et tortor consequat id porta nibh</p>
@@ -119,16 +125,16 @@ export default function WebPortofolio() {
           <div className="w-full px-4">
             <div className="flex flex-wrap items-center justify-center">
               <a href="#home" className="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                <img src="/images/clients/mcdonalds.svg" alt="mekdi" />
+                <img src={mekdi} alt="mekdi" />
               </a>
               <a href="#home" className="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                <img src="/images/clients/google.svg" alt="google" />
+                <img src={google} alt="google" />
               </a>
               <a href="#home" className="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                <img src="/images/clients/apple.svg" alt="apple" />
+                <img src={apple} alt="apple" />
               </a>
               <a href="#home" className="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                <img src="/images/clients/bmw.svg" alt="bmw" />
+                <img src={bmw} alt="bmw" />
               </a>
             </div>
           </div>
@@ -310,5 +316,5 @@ export default function WebPortofolio() {
       </footer>
       {/* FOOTER SECTION END */}
     </>
-  )
+  );
 }

@@ -6,7 +6,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route exact path="*" element={<WebPortofolio />}></Route>
+          <Route path="*" element={<WebPortofolio />}></Route>
           {/* <Route exact path='/' element={<Navigate to='/johnsungjs' />}></Route> */}
           {/* <Route exact path='/johnsungjs' element={<WebPortofolio />}></Route> */}
         </Routes>
