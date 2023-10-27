@@ -5,11 +5,8 @@ import mekdi from "../assets/images/clients/mcdonalds.svg";
 import apple from "../assets/images/clients/apple.svg";
 import bmw from "../assets/images/clients/bmw.svg";
 import google from "../assets/images/clients/google.svg";
-import { useNavigate } from "react-router-dom";
 
 export default function WebPortofolio() {
-  const navigate = useNavigate();
-
   return (
     <>
       {/* HEADER START */}
@@ -23,7 +20,7 @@ export default function WebPortofolio() {
               <h1 className="text-base font-semibold text-primary md:text-xl">Halo Semua, saya <span className="block font-bold text-dark text-4xl mt-1 lg:text-5xl">John Sung</span></h1>
               <h2 className="font-medium text-secondary text-lg mb-5 lg:text-2xl">Web & <span className="text-dark">Mobile Developer</span> </h2>
               <p className="font-medium text-secondary mb-10 leading-relaxed">Belajar web programming itu mudah kan? <span className="text-dark font-bold">ngga</span></p>
-              <a href="#contact" className="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
+              <a href="https://wa.me/+6281211899299" className="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
             </div>
             <div className="w-full self-end px-4 lg:w-1/2">
               <div className="relative mt-10 lg:mt-9 lg:right-0">
@@ -238,7 +235,7 @@ export default function WebPortofolio() {
               </div>
               <div className="w-full px-4">
                 <button className="w-full text-base font-semibold text-white bg-primary py-3 rounded-full hover:opacity-80 hover:shadow-lg transition duration-500"
-                onClick={() => window.location.href("https://wa.me/+6281211899299")}
+                  onClick={() => window.open('https://wa.me/+6281211899299', '_blank')}
                 >Hubungi Saya</button>
               </div>
             </div>
