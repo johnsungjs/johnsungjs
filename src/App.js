@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import WebPortofolio from "./pages/WebPortofolio";
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route exact path="*" element={<Navigate to='/johnsungjs' />}></Route>
+          <Route exact path="*" element={<WebPortofolio />}></Route>
           {/* <Route exact path='/' element={<Navigate to='/johnsungjs' />}></Route> */}
           {/* <Route exact path='/johnsungjs' element={<WebPortofolio />}></Route> */}
         </Routes>
