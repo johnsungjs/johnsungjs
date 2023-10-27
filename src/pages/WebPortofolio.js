@@ -5,8 +5,11 @@ import mekdi from "../assets/images/clients/mcdonalds.svg";
 import apple from "../assets/images/clients/apple.svg";
 import bmw from "../assets/images/clients/bmw.svg";
 import google from "../assets/images/clients/google.svg";
+import { useNavigate } from "react-router-dom";
 
 export default function WebPortofolio() {
+  const navigate = useNavigate();
+
   return (
     <>
       {/* HEADER START */}
@@ -234,7 +237,9 @@ export default function WebPortofolio() {
                 </textarea>
               </div>
               <div className="w-full px-4">
-                <button className="w-full text-base font-semibold text-white bg-primary py-3 rounded-full hover:opacity-80 hover:shadow-lg transition duration-500">Hubungi Saya</button>
+                <button className="w-full text-base font-semibold text-white bg-primary py-3 rounded-full hover:opacity-80 hover:shadow-lg transition duration-500"
+                onClick={() => window.location.href("https://wa.me/+6281211899299")}
+                >Hubungi Saya</button>
               </div>
             </div>
           </form>
@@ -294,7 +299,7 @@ export default function WebPortofolio() {
           <div className="w-full pt-10 border-t border-slate-700">
             <div className="flex items-center justify-center mb-5">
               {/* YOUTUBE */}
-              <a href="https://youtube.com" target="_blank" rel="noreferrer" className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+              <a href="https://www.youtube.com/@johnsungjs" target="_blank" rel="noreferrer" className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
                 <svg className="fill-current" width="20" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" /></svg>
               </a>
               {/* INSTAGRAM */}
