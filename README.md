@@ -1,0 +1,1 @@
+Hi, Welcome to John Sung's Personal Web Portofolio
