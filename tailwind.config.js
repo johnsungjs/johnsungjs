@@ -10,8 +10,13 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#14b8a5',
-        secondary: '#64748b',
+        // primary: '#14b8a5',
+        // secondary: '#64748b',
+        primary: '#007BB6',
+        secondary: '#61DAFB',
+        accent: '#FDCB58',
+        bgC: '#F5F5F5',
+        textC: '#333333',
         dark: '#0f172a'
       },
       screens: {

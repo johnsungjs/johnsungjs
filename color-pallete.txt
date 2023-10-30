@@ -1,0 +1,15 @@
+Primary Color: #007BB6
+
+This shade of blue signifies professionalism and trust, aligning with your business background and your role as a developer.
+Secondary Color: #61DAFB
+
+This light blue complements the primary color and adds a sense of innovation and creativity, which is essential in the tech industry.
+Accent Color: #FDCB58
+
+A warm and vibrant shade of yellow represents energy and optimism. It can convey your enthusiasm for technology and learning.
+Background Color: #F5F5F5
+
+A light gray background provides a clean and minimalist look for your website, making your content more readable and visually appealing.
+Text Color: #333333
+
+A dark gray text color ensures readability and contrasts well with the background.

@@ -1,9 +1,9 @@
-import { useState } from "react"
+import { useState } from "react";
 
 export default function Navbar() {
   const [hamburger, setHamburger] = useState(false);
 
-  window.onscroll = function () {
+  window.onscroll = () => {
     const header = document.querySelector('header');
     const fixedNav = header.offsetTop;
 
@@ -12,7 +12,7 @@ export default function Navbar() {
     } else {
       header.classList.remove('navbar-fixed');
     }
-  }
+  };
 
   return (
     <>
@@ -57,5 +57,5 @@ export default function Navbar() {
         </div>
       </header>
     </>
-  )
+  );
 }
