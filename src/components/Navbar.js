@@ -41,9 +41,9 @@ export default function Navbar() {
                   <li className="group">
                     <a href="#portfolio" className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portfolio</a>
                   </li>
-                  <li className="group">
+                  {/* <li className="group">
                     <a href="#clients" className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Clients</a>
-                  </li>
+                  </li> */}
                   <li className="group">
                     <a href="#blog" className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Blog</a>
                   </li>

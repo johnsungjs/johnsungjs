@@ -1,25 +1,32 @@
 import Navbar from "../components/Navbar";
 import burung from "../assets/images/burungpretBgRemove.png";
 import porto1 from "../assets/images/portfolio/1.jpeg";
-import mekdi from "../assets/images/clients/mcdonalds.svg";
-import apple from "../assets/images/clients/apple.svg";
-import bmw from "../assets/images/clients/bmw.svg";
-import google from "../assets/images/clients/google.svg";
+import { useRef, useState } from "react";
+import BigModal from "../components/BigModal";
+// import mekdi from "../assets/images/clients/mcdonalds.svg";
+// import apple from "../assets/images/clients/apple.svg";
+// import bmw from "../assets/images/clients/bmw.svg";
+// import google from "../assets/images/clients/google.svg";
 
 export default function WebPortofolio() {
+  const [showModal, setShowModal] = useState(false);
+  const blogRef = useRef();
+
+  console.log(blogRef.current.outerText);
+
   return (
     <>
       {/* HEADER START */}
       <Navbar />
       {/* HEADER END */}
       {/* HERO SECTION START */}
-      <section id="home" className="pt-36">
+      <section id="home" className="pt-36 bg-bgC">
         <div className="container">
           <div className="flex flex-wrap">
             <div className="w-full self-center px-4 lg:w-1/2">
-              <h1 className="text-base font-semibold text-primary md:text-xl">Halo Semua, saya <span className="block font-bold text-dark text-4xl mt-1 lg:text-5xl">John Sung</span></h1>
-              <h2 className="font-medium text-secondary text-lg mb-5 lg:text-2xl">Web & <span className="text-dark">Mobile Developer</span> </h2>
-              <p className="font-medium text-secondary mb-10 leading-relaxed">Belajar web programming itu mudah kan? <span className="text-dark font-bold">ngga</span></p>
+              <h1 className="text-base font-semibold text-textColor md:text-xl">Halo Semua, saya <span className="block font-bold text-textColor text-4xl mt-1 lg:text-5xl">John Sung</span></h1>
+              <h2 className="font-medium text-primary text-lg mb-5 lg:text-2xl">Web & <span className="text-dark">Mobile Developer</span> </h2>
+              <p className="font-medium text-textColor mb-10 leading-relaxed">Belajar web programming itu mudah kan? <span className="text-dark font-bold">ngga</span></p>
               <a href="https://wa.me/+6281211899299" className="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
             </div>
             <div className="w-full self-end px-4 lg:w-1/2">
@@ -33,17 +40,17 @@ export default function WebPortofolio() {
       {/* HERO SECTION END */}
 
       {/* ABOUT SECTION START */}
-      <section id="about" className="pt-36 pb-32">
+      <section id="about" className="pt-36 pb-32 bg-bgColor">
         <div className="container">
           <div className="flex flex-wrap">
             <div className="w-full px-4 mb-10 lg:w-1/2">
               <h4 className="font-bold uppercase text-primary text-lg mb-3">Tentang Saya</h4>
               <h2 className="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">Yuk, Belajar Web Programming</h2>
-              <p className="font-medium text-base text-secondary max-w-xl lg:text-lg">auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh</p>
+              <p className="font-medium text-base text-primary max-w-xl lg:text-lg">auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh</p>
             </div>
             <div className="w-full px-4 lg:w-1/2">
               <h3 className="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Mari Berteman</h3>
-              <p className="font-medium text-base text-secondary mb-6 lg:text-lg">auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh</p>
+              <p className="font-medium text-base text-primary mb-6 lg:text-lg">auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh</p>
               <div className="flex items-center">
                 {/* YOUTUBE */}
                 <a href="https://youtube.com" target="_blank" rel="noreferrer" className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-400 hover:border-primary hover:bg-primary hover:text-white">
@@ -75,7 +82,7 @@ export default function WebPortofolio() {
             <div className="max-w-xl mx-auto text-center mb-16">
               <h4 className="font-semibold text-lg text-primary mb-2">Portfolio</h4>
               <h2 className="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Project Terbaru</h2>
-              <p className="font-medium text-base text-secondary md:text-lg">auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh aliquam sem et tortor consequat id porta nibh</p>
+              <p className="font-medium text-base text-primary md:text-lg">auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh aliquam sem et tortor consequat id porta nibh</p>
             </div>
           </div>
           <div className="mx-auto w-full px-4 flex flex-wrap justify-center xl:w-10/12">
@@ -84,28 +91,28 @@ export default function WebPortofolio() {
                 <img src={porto1} alt="cashier app" />
               </div>
               <h3 className="font-semibold text-xl text-dark mt-5 mb-3">Cashier App</h3>
-              <p className="font-medium text-base text-secondary">auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh aliquam sem et tortor consequat id porta nibh</p>
+              <p className="font-medium text-base text-primary">auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh aliquam sem et tortor consequat id porta nibh</p>
             </div>
             <div className="mb-12 p-4 md:w-1/2">
               <div className="rounded-md shadow-md overflow-hidden">
                 <img src={porto1} alt="cashier app" />
               </div>
               <h3 className="font-semibold text-xl text-dark mt-5 mb-3">Cashier App</h3>
-              <p className="font-medium text-base text-secondary">auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh aliquam sem et tortor consequat id porta nibh</p>
+              <p className="font-medium text-base text-primary">auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh aliquam sem et tortor consequat id porta nibh</p>
             </div>
             <div className="mb-12 p-4 md:w-1/2">
               <div className="rounded-md shadow-md overflow-hidden">
                 <img src={porto1} alt="cashier app" />
               </div>
               <h3 className="font-semibold text-xl text-dark mt-5 mb-3">Cashier App</h3>
-              <p className="font-medium text-base text-secondary">auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh aliquam sem et tortor consequat id porta nibh</p>
+              <p className="font-medium text-base text-primary">auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh aliquam sem et tortor consequat id porta nibh</p>
             </div>
             <div className="mb-12 p-4 md:w-1/2">
               <div className="rounded-md shadow-md overflow-hidden">
                 <img src={porto1} alt="cashier app" />
               </div>
               <h3 className="font-semibold text-xl text-dark mt-5 mb-3">Cashier App</h3>
-              <p className="font-medium text-base text-secondary">auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh aliquam sem et tortor consequat id porta nibh</p>
+              <p className="font-medium text-base text-primary">auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh aliquam sem et tortor consequat id porta nibh</p>
             </div>
           </div>
         </div>
@@ -113,7 +120,7 @@ export default function WebPortofolio() {
       {/* PORTFOLIO SECTION END */}
 
       {/* CLIENT SECTION START */}
-      <section id="clients" className="pt-36 pb-32 bg-slate-700">
+      {/* <section id="clients" className="pt-36 pb-32 bg-slate-700">
         <div className="container">
           <div className="w-full px-4">
             <div className="mx-auto text-center mb-16">
@@ -139,7 +146,7 @@ export default function WebPortofolio() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* CLIENT SECTION END */}
 
       {/* BLOG SECTION START */}
@@ -149,21 +156,23 @@ export default function WebPortofolio() {
             <div className="max-w-xl mx-auto text-center mb-16">
               <h4 className="font-semibold text-lg text-primary mb-2">Blog</h4>
               <h2 className="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Tulisan Terkini</h2>
-              <p className="font-medium text-base text-secondary md:text-lg">auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh aliquam sem et tortor consequat id porta nibh</p>
+              <p className="font-medium text-base text-primary md:text-lg">auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh aliquam sem et tortor consequat id porta nibh</p>
             </div>
           </div>
-          <div className="flex flex-wrap justify-center">
+          <div ref={blogRef} className="flex flex-wrap justify-center">
             <div className="w-full px-4 md:w-1/2 lg:w-1/3">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-10 group cursor-pointer">
                 <img src="https://source.unsplash.com/360x200?programming" alt="" className="w-full" />
                 <div className="py-8 px-6">
                   <h3 className="mb-3 font-semibold text-xl text-dark truncate group-hover:text-primary">Tips Belajar Programming</h3>
                   <p className="min-h-[72px] font-medium text-base text-secondary mb-4 line-clamp-3">sem et tortor consequat id porta nibh</p>
-                  <p className="font-medium text-sm bg-primary py-2 px-4 rounded-lg text-white hover:opacity-80">Baca selengkapnya...</p>
+                  <p className="font-medium text-sm bg-primary py-2 px-4 rounded-lg text-white hover:opacity-80"
+                    onClick={() => setShowModal(true)}
+                  >Baca selengkapnya...</p>
                 </div>
               </div>
             </div>
-            <div className="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div ref={blogRef} className="w-full px-4 md:w-1/2 lg:w-1/3">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-10 group cursor-pointer">
                 <img src="https://source.unsplash.com/360x200?coffee" alt="" className="w-full" />
                 <div className="py-8 px-6">
@@ -214,8 +223,8 @@ export default function WebPortofolio() {
           <div className="w-full px-4">
             <div className="max-w-xl mx-auto text-center mb-16">
               <h4 className="font-semibold text-lg text-primary mb-2">Contact</h4>
-              <h2 className="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Hubungi Kami</h2>
-              <p className="font-medium text-base text-secondary md:text-lg">auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh aliquam sem et tortor consequat id porta nibh</p>
+              <h2 className="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Hubungi Saya</h2>
+              <p className="font-medium text-base text-primary md:text-lg">auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh aliquam sem et tortor consequat id porta nibh</p>
             </div>
           </div>
           <form>
@@ -234,9 +243,9 @@ export default function WebPortofolio() {
                 </textarea>
               </div>
               <div className="w-full px-4">
-                <button className="w-full text-base font-semibold text-white bg-primary py-3 rounded-full hover:opacity-80 hover:shadow-lg transition duration-500"
-                  onClick={() => window.open('https://wa.me/+6281211899299', '_blank')}
-                >Hubungi Saya</button>
+                <a className="w-full block text-center text-base font-semibold text-white bg-primary py-3 rounded-full hover:opacity-80 hover:shadow-lg transition duration-500"
+                  href="https://wa.me/+6281211899299"
+                >Hubungi Saya</a>
               </div>
             </div>
           </form>
@@ -250,22 +259,22 @@ export default function WebPortofolio() {
         <div className="container">
           <div className="flex flex-wrap lg:text-center">
             <div className="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
-              <h2 className="font-bold text-4xl text-white mb-5">WPU</h2>
-              <h3 className="font-bold text-2xl mb-2">Hubungi Kami</h3>
-              <p>Jl. Tendean No. 193</p>
+              {/* <h2 className="font-bold text-4xl text-white mb-5">WPU</h2> */}
+              <h3 className="font-bold text-xl mb-2">Hubungi Kami</h3>
+              <p>Harapan Indah</p>
               <p>Bekasi</p>
             </div>
             <div className="w-full px-4 mb-12 md:w-1/3">
               <h3 className="font-semibold text-xl text-white mb-5">Kategori Tulisan</h3>
               <ul className="text-slate-300">
                 <li>
-                  <a href="#home" className="inline-block text-base hover:text-primary">Programming</a>
+                  <a href="#home" className="inline-block text-base hover:text-secondary">Programming</a>
                 </li>
                 <li>
-                  <a href="#home" className="inline-block text-base hover:text-primary">Teknologi</a>
+                  <a href="#home" className="inline-block text-base hover:text-secondary">Teknologi</a>
                 </li>
                 <li>
-                  <a href="#home" className="inline-block text-base hover:text-primary">Gaya Hidup</a>
+                  <a href="#home" className="inline-block text-base hover:text-secondary">Gaya Hidup</a>
                 </li>
               </ul>
             </div>
@@ -273,22 +282,22 @@ export default function WebPortofolio() {
               <h3 className="font-semibold text-xl text-white mb-5">Tautan</h3>
               <ul className="text-slate-300">
                 <li>
-                  <a href="#home" className="inline-block text-base hover:text-primary">Beranda</a>
+                  <a href="#home" className="inline-block text-base hover:text-secondary">Beranda</a>
                 </li>
                 <li>
-                  <a href="#about" className="inline-block text-base hover:text-primary">Tentang Saya</a>
+                  <a href="#about" className="inline-block text-base hover:text-secondary">Tentang Saya</a>
                 </li>
                 <li>
-                  <a href="#portfolio" className="inline-block text-base hover:text-primary">Portfolio</a>
+                  <a href="#portfolio" className="inline-block text-base hover:text-secondary">Portfolio</a>
                 </li>
                 <li>
-                  <a href="#clients" className="inline-block text-base hover:text-primary">Clients</a>
+                  <a href="#clients" className="inline-block text-base hover:text-secondary">Clients</a>
                 </li>
                 <li>
-                  <a href="#blog" className="inline-block text-base hover:text-primary">Blog</a>
+                  <a href="#blog" className="inline-block text-base hover:text-secondary">Blog</a>
                 </li>
                 <li>
-                  <a href="#contact" className="inline-block text-base hover:text-primary">Contact</a>
+                  <a href="#contact" className="inline-block text-base hover:text-secondary">Contact</a>
                 </li>
               </ul>
             </div>
@@ -317,6 +326,10 @@ export default function WebPortofolio() {
         </div>
       </footer>
       {/* FOOTER SECTION END */}
+
+      {/* MODAL SECTION START */}
+      {showModal && <BigModal setShowModal={setShowModal} title="hardcode title" body="hardcode body" />}
+      {/* MODAL SECTION END */}
     </>
   );
 }

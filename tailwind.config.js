@@ -12,11 +12,11 @@ module.exports = {
       colors: {
         // primary: '#14b8a5',
         // secondary: '#64748b',
-        primary: '#007BB6',
+        primary: '#6c15cf',
         secondary: '#61DAFB',
         accent: '#FDCB58',
-        bgC: '#F5F5F5',
-        textC: '#333333',
+        bgColor: '#F5F5F5',
+        textColor: '#333333',
         dark: '#0f172a'
       },
       screens: {
